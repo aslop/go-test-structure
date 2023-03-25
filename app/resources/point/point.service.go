@@ -19,3 +19,5 @@ func GetUserPoints(userId primitive.ObjectID, query struct{}) ([]UserOrgPoints, 
 	repo := NewPointRepository(db.Database)
 	return repo.GetUserPoints(userId, query)
 }
+
+//
